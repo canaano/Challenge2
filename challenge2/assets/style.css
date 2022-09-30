@@ -5,14 +5,13 @@ body {
   
 }
 
-:root {
-    
-}
 
 
 .container {
     width: 90%;
     margin: 0 auto;
+    padding: 0px;
+
 }
 
 header {
@@ -36,9 +35,10 @@ header {
 }
 h1 {
     display: block;
+    font-size: 40px;
     color: #444;
-    padding: 5px;
-    margin: 0;
+    padding: 0px;
+    margin: 0px;
 }
 
 nav {
@@ -46,7 +46,6 @@ nav {
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: flex-end;
-    align-items: center;
     
     
 }
@@ -98,7 +97,7 @@ nav a::before {
 
 .hero-banner {
     background: white;
-    background-image:url(../assets/images/wetransfer\ background\ small.jpg);
+    background-image:url(../assets/images/Cropped\ Hero\ Banner.jpg);
     background-size: cover;
     background-position: center;
     padding: 2% 6%;
