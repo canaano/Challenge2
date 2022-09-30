@@ -8,13 +8,15 @@ body {
 :root {
     --primary: rgb(58, 167, 142);
     --secondary: rgb(38, 38, 180);
-    --light: (white);
-
+    --light: (whitesmoke);
 
 }
 
 
 .container {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
     width: 90%;
     margin: 0 auto;
     padding: 0px;
@@ -27,20 +29,21 @@ header {
     flex-direction: row;
     justify-content: space-between;
     flex-wrap: wrap;
-    align-items: center;
+    /* align-items: center; */
     padding: 15px;
 
  }
 
 .logo {
     border-radius: 50%;
-    padding: 20;
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: flex-start;
-    align-items: center;
+    /* align-items: center; */
     margin: 15px;
+    scale: 50%;
+
 }
 h1 {
     display: block;
@@ -55,7 +58,7 @@ nav {
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: flex-end;
-    
+    align-items: flex-end;
     
 }
 
@@ -69,7 +72,7 @@ nav ul {
 nav li {
     display: inline-block;
     margin-left: 10px;
-    padding: 25px;
+    padding: 5px;
     position:relative;
 }
 
@@ -78,7 +81,7 @@ nav a {
     text-decoration: none;
     text-transform: uppercase;
     font-size: 20px;
-    padding: 5px;
+    padding: 15px;
     margin-right: 10px;
     
 
@@ -113,6 +116,7 @@ nav a::before {
     justify-content: flex-end;
     align-items: flex-end;
     text-align: right;
+    min-height: 300px;
 }
 
 .hero-banner div {
@@ -121,7 +125,7 @@ nav a::before {
 
 .hero-banner h2 {
     background-color: var(--primary);
-    color: var(--secondary);
+    color: whitesmoke;
     margin: 0;
     padding: 5px 10px;
     font-size: 2rem;
@@ -166,6 +170,7 @@ h2 {
 
 .flex-boxes {
     display: flex;
+    
     /* flex-wrap: wrap; */
     /* justify-content: center; */
 }
@@ -178,12 +183,16 @@ h2 {
     display: flex;
     position: relative;
     border: 5px solid var(--secondary);
+    border-radius: 30px;
 }
 
 .flex-item-label {
     position: absolute;
     bottom: 10px;
     left: 0;
+    background-color: var(--primary);
+    padding: 10px 10px;
+    border-radius: 30px;
 }
 
 .pier-overview {
@@ -211,15 +220,19 @@ h2 {
     /* max-height: 150px; */
     display: flex;
     align-items: flex-end;
-    padding: 0 0 20px 0;
+    padding: 20px;
     margin: 5px;
     text-decoration: none;
+    border-radius: 50px;
+    margin: 10px;
+    gap: 10px;
 
 }
 
 .flex-boxes div {
     background-color: var(--primary);
     padding: 10px 10px;
+    color: aliceblue;
 
 }
 
@@ -234,3 +247,26 @@ h3 {
     margin-inline-end: 0px;
     font-weight: bold;
 }
+
+
+
+
+
+
+
+ @media screen and (max-width: 980px){
+    header {
+        padding: 0 0 10px 0;
+        justify-content: center;
+        text-align: center;
+    }
+
+    .logo {
+        justify-content: center;
+       
+    }
+
+    header nav {
+        justify-content: center;
+        color: ;
+    }
