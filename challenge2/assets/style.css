@@ -254,7 +254,7 @@ h3 {
 
 
 
- @media screen and (max-width: 980px){
+ @media screen and (max-width: 845px) {
     header {
         padding: 0 0 10px 0;
         justify-content: center;
@@ -268,5 +268,8 @@ h3 {
 
     header nav {
         justify-content: center;
-        color: ;
-    }
+        color: whitesmoke;
+ }
+}
+
+    
