@@ -1,31 +1,24 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <link rel="stylesheet" href="assets/style.css" />
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Canaan Owens Portfolio</title>
+    <link rel="stylesheet" href="assets/reset.css" />
+    <link rel="stylesheet" href="assets/style.css" />
   </head>
   <body>
     <header>
-      <!--  <div class="container"> -->
-        <img
-        src="assets/images/EyeRoll.jpg"
-        alt="funny headshot"
-        class="logo"
-      />
+      <h1>Canaan Owens</h1>
+      <img src="assets/images/EyeRoll.jpg" alt="funny headshot" />
 
-       
-        <nav>
-          <ul>
-            <li><a href="#">About Me</a></li>
-            <li><a href="#">Work</a></li>
-            <li><a href="#">Contact</a></li>
-            <li><a href="#">Resume</a></li>
-          </ul>
-        </nav>
-      </div>
+      <nav>
+        <a href="#about-me">About Me</a>
+        <a href="#work">Work</a>
+        <a href="#contact">Contact</a>
+        <a href="#">Resume</a>
+      </nav>
     </header>
     <section class="hero-banner">
       <div>
@@ -43,57 +36,54 @@
             on and on and on and on
           </p>
         </div>
-      </section> 
-      <class="page-section" id="work">
+      </section>
+
+      <section class="page-section" id="work">
         <h2>Work</h2>
-        <div>
+        <div class="flex-boxes">
           <a href="#" class="flex-item pier-overview">
-            <div class="flex-boxes">
-            <div class="flex-item-label">
+            <div>
               <h3>Pier Finder App</h3>
               <span>MERN Stack</span>
             </div>
-          </div>
           </a>
-        </div>
-        <div class="flex-boxes">
+
           <a href="#" class="flex-item drone-with-pier">
-            <div class="flex-item-label">
+            <div>
               <h3>Sunset Finder</h3>
               <span>MERN Stack</span>
             </div>
           </a>
           <a href="#" class="flex-item tahoe">
-            <div class="flex-item-label">
+            <div>
               <h3>Hike Planner</h3>
               <span>MERN Stack</span>
             </div>
           </a>
           <a href="#" class="flex-item catalina">
-            <div class="flex-item-label">
+            <div>
               <h3>Fish Finder</h3>
               <span>MERN Stack</span>
             </div>
           </a>
           <a href="#" class="flex-item river-ad">
-            <div class="flex-item-label">
+            <div>
               <h3>Water Temp Gauge</h3>
               <span>MERN Stack</span>
             </div>
           </a>
         </div>
       </section>
+
+      <!-- Contact me -->
       <section class="page-section" id="contact">
         <h2>Contact Me</h2>
         <div>
-          <address class="end">
-            <a href="tel:+17144707182" class="end-item">714.470.7182</a>
-            <div class="break">
-            </div>
-            <a href="mailto:canaan@simpledronemedia.com"
-              class="end-item">Canaan@simpledronemedia.com
-              </a>
-          </address>
+          <a href="tel:+17144707182" class="end-item">714.470.7182</a>
+          <a href="mailto:canaan@simpledronemedia.com"
+            >Canaan@simpledronemedia.com</a
+          >
+          <a href="http://github.com/canaano"></a>
         </div>
       </section>
     </main>
