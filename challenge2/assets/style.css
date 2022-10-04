@@ -249,6 +249,7 @@ div {display: block;
     header h1 {
       width: 100%;
       padding: 5px;
+      margin-left: none;
       margin-bottom: 10px;
       font-size: 10vw;
     }
