@@ -5,7 +5,7 @@
 /* Setting Color Pallete */
 :root {
     --primary: rgb(58, 167, 142);
-    --secondary: rgb(38, 38, 180);
+    --secondary: rgb(41, 51, 91);
     --light: (whitesmoke);
     --dark: rgb(50, 60, 65);
     --ash: rgb(149, 170, 178);
@@ -27,6 +27,7 @@ header {
     flex-wrap: wrap;
     align-items: center; 
     padding: 15px 6% 15px 0;
+    border-bottom: 3px solid ;
 }
 
 
@@ -37,8 +38,9 @@ header {
  }
 
  header img:hover {
-    
- }
+    box-shadow: var(--dark) 0 0 20px;
+    transform: scale(1.02);
+    }
 
 header h1 {
     display: block;
@@ -70,9 +72,8 @@ nav a {
 }
 
 nav a:hover {
-    color: black;
-    font-style: italic;
-    font-weight: 600;
+    box-shadow: var(--dark) 0 0 10px;
+    transform: scale(1.01);
 
 }
 
@@ -87,6 +88,7 @@ nav a:hover {
     align-items: flex-end;
     text-align: right;
     min-height: 300px;
+    border-bottom: 3px solid;
 }
 
 .hero-banner div {
@@ -95,6 +97,7 @@ nav a:hover {
 
 .hero-banner h2 {
     background-color: var(--secondary);
+    border-radius: 20px;
     color: whitesmoke;
     margin: 0;
     padding: 5px 10px;
