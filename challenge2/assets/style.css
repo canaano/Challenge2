@@ -35,12 +35,18 @@ header {
     max-width: 100px;
     max-height: 100px;
     border-radius: 90%;
+    -webkit-transition: -webkit-transform 1s;
  }
 
  header img:hover {
     box-shadow: var(--dark) 0 0 20px;
     transform: scale(1.02);
     }
+
+    /* Image spin effect on hover */
+.rotate_01:hover {
+    -webkit-transform: rotate(360deg) translateZ(0);
+}
 
 header h1 {
     display: block;
