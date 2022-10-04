@@ -8,7 +8,7 @@
     --secondary: rgb(38, 38, 180);
     --light: (whitesmoke);
     --dark: rgb(50, 60, 65);
-    --ash: rgb(223, 228, 230);
+    --ash: rgb(149, 170, 178);
 }
 /* Body formatting */
 body {
@@ -20,7 +20,7 @@ body {
 }
 
 header {
-    background-color: var(--primary);
+    background-color: var(--ash);
     display: flex;
     flex-direction: row;
     justify-content: space-between;
@@ -34,6 +34,10 @@ header {
     max-width: 100px;
     max-height: 100px;
     border-radius: 90%;
+ }
+
+ header img:hover {
+    
  }
 
 header h1 {
@@ -90,7 +94,7 @@ nav a:hover {
 }
 
 .hero-banner h2 {
-    background-color: var(--primary);
+    background-color: var(--secondary);
     color: whitesmoke;
     margin: 0;
     padding: 5px 10px;
@@ -131,19 +135,14 @@ main {
     padding-right: 15px;
     border-right: 4px solid var(--secondary);
     line-height: 1.1;
-    font-size: 3vw;
+    font-size: 2.2vw;
 }
-
-/* .page-section p {
-    margin-bottom: 20px;
-    margin-left: 30px;
-} */
 
 .flex-container {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-    /* flex-wrap: wrap; */
+  
     /* justify-content: center; */
 }
 
@@ -153,11 +152,11 @@ main {
     color: var(--tertiary);
     min-height: 150px;
     max-height: 150px;
-    flex-basis: calc(50% - 1em);
+    flex-basis: calc(45% - 1em);
     display: flex;
     align-items: flex-end;
     padding: 0 0 20px 0;
-    margin: 2em;
+    margin: .8em;
     text-decoration: none;
     background-blend-mode: soft-light;
     background-size: 150%;
@@ -166,6 +165,9 @@ main {
     border-radius: 15px;
 } 
 
+span {
+    align-items: center;
+}
 /* Work background images */
 .pier-overview {
     background-image: url(./images/Mavic\ 3\ pier\ 1.jpeg);
@@ -183,10 +185,7 @@ main {
     background-image: url(./images/River\ ad.JPG);
 }
 
-span {
-    align-items: center;
-}
-
+/* Draw attention to first item */
 .flex-item:first-child {
     min-height: 400px;
     flex-basis: 100%;
@@ -194,9 +193,11 @@ span {
 
 
 .flex-container div {
-    background-color: var(--primary);
+    background-color: var(--secondary);
+    max-width: fit-content;
+    border-radius: 0 10px 10px 0;
     padding: 8px 10px;
-    color: var(--ash);
+    color: whitesmoke;
 
 }
 
@@ -206,7 +207,11 @@ div {display: block;
 .flex-item h3 {
    font-size: 1.6rem;
 }
-
+/* flex item grow and box shadow effect */
+.flex-item:hover {
+   box-shadow: var(--dark) 0 0 20px;
+   transform: scale(1.02);
+   }
 
 /* Contact flex formatting */
 #contact address {
@@ -227,8 +232,11 @@ div {display: block;
     display: inline-block;
 }
 
+#contact address a:hover {
+    font-weight: 900;
+}
 
-/* Media layouts */
+/* Media layouts at 980px*/
 @media screen and (max-width: 980px) {
     header {
       padding: 0 0 10px 0;
@@ -256,14 +264,14 @@ div {display: block;
 
     .page-section > h2 {
       border-right: none;
-      /* border-bottom: 4px solid var(--primary); */
+      border-bottom: 4px solid var(--secondary); 
       margin-bottom: 20px;
       padding-bottom: 10px;
       text-align: left;
-      font-size: 7vw;
+      font-size: 2em;
     }
   }
-  /* media screen formatting for smaller screens */
+  /* media screen formatting for 768*/
   @media screen and (max-width: 768px) {
     .flex-item,
     .flex-item:first-child {
