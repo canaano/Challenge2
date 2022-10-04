@@ -172,6 +172,7 @@ main {
     transition: all 0.5s;
     font-size: 0.9rem;
     border-radius: 15px;
+    background-position: center;
 } 
 
 span {
@@ -276,7 +277,7 @@ div {display: block;
       border-bottom: 4px solid var(--secondary); 
       margin-bottom: 20px;
       padding-bottom: 10px;
-      text-align: left;
+      text-align: center;
       font-size: 2em;
     }
   }
