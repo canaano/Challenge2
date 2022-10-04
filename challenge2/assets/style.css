@@ -10,7 +10,7 @@
     --dark: rgb(50, 60, 65);
     --ash: rgb(149, 170, 178);
 }
-/* Body formatting */
+/* overall Body formatting */
 body {
     margin: 0;
     padding: 0;
@@ -18,7 +18,7 @@ body {
     font-family: 'Arial Narrow Bold', sans-serif
   
 }
-
+/* header styling */
 header {
     background-color: var(--ash);
     display: flex;
@@ -56,7 +56,7 @@ header h1 {
     margin: 0px;
     line-height: 1;
 }
-
+/* navigation bar styling */
 nav {
     display: flex;
     flex-direction: row;
@@ -83,7 +83,7 @@ nav a:hover {
 
 }
 
-
+/* cover image */
 .hero-banner {
     background-image:url(../assets/images/Cropped\ Hero\ Banner.jpg);
     background-size: cover;
@@ -100,7 +100,7 @@ nav a:hover {
 .hero-banner div {
     flex: 0 0 90%;
 }
-
+/* cover image words */
 .hero-banner h2 {
     background-color: var(--secondary);
     border-radius: 20px;
@@ -116,7 +116,7 @@ main {
     margin-top: 20px;
     margin-bottom: 50px;
 }
-
+/* about me paragraph parameters */
 .indent {
     text-indent: 30px; 
     margin-left: 30px;
@@ -201,7 +201,7 @@ span {
     flex-basis: 100%;
 }
 
-
+/* names of each project */
 .flex-container div {
     background-color: var(--secondary);
     max-width: fit-content;
@@ -241,7 +241,7 @@ div {display: block;
     margin: 0 0.2rem 0.1rem;
     display: inline-block;
 }
-
+/* bold when hovered over */
 #contact address a:hover {
     font-weight: 900;
 }
