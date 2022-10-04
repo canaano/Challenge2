@@ -2,18 +2,19 @@
     box-sizing: border-box;
 }
 
-
+/* Setting Color Pallete */
 :root {
     --primary: rgb(58, 167, 142);
     --secondary: rgb(38, 38, 180);
     --light: (whitesmoke);
-
+    --dark: rgb(50, 60, 65);
+    --ash: rgb(223, 228, 230);
 }
-
+/* Body formatting */
 body {
     margin: 0;
     padding: 0;
-    background-color: aliceblue;
+    background-color: var(--ash);
     font-family: 'Arial Narrow Bold', sans-serif
   
 }
@@ -34,20 +35,21 @@ header {
     max-height: 100px;
     border-radius: 90%;
  }
-h1 {
+
+header h1 {
     display: block;
-    font-size: 40px;
-    color: #444;
-    padding: 0px;
+    font-size: 4vw;
+    color: var(--dark);
+    padding: 5px 1% 5px 6%;
     margin: 0px;
+    line-height: 1;
 }
 
 nav {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
-    justify-content: flex-end;
-    align-items: flex-end;
+    position: relative;
     
 }
 
@@ -56,7 +58,7 @@ nav a {
     color: var(--light);
     text-decoration: none;
     text-transform: uppercase;
-    font-size: 20px;
+    font-size: 1.4rem;
     padding: 15px;
     margin-right: 10px;
     
@@ -70,7 +72,7 @@ nav a:hover {
 
 }
 
-nav a::before {
+/* nav a::before {
     content: '';
     display: block;
     height: 5px;
@@ -80,7 +82,7 @@ nav a::before {
     top: 0;
     width: 0%;
 
-}
+} */
 
 .hero-banner {
     background: white;
@@ -115,8 +117,8 @@ main {
 }
 
 .page-section {
-    margin: 25px;
-    padding: 10px;
+    margin: 25px 0;
+    padding: 10px 0;
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
@@ -129,39 +131,24 @@ main {
     flex: 0 0 80%;
 }
 
-h2 {
+.page-section > h2 {
     flex: 0 0 20%;
-    text-align: left;
-    padding-right: 20px;
-    border-left: 4px solid;
+    text-align: right;
+    padding-right: 15px;
+    border-left: 4px solid var(--secondary);
     padding: 20px;
     font-size: 40px;
     display: block;
 }
 
-.flex-boxes {
+.flex-box {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-    /* flex-wrap: wrap; */
-    /* justify-content: center; */
+
 }
 
-
-/* .flex-item {
-    border: 5px solid var(--secondary);
-    min-height: 150px;
-    max-height: 200px;
-    min-width: 350px;
-    flex-basis: calc(50% - 1em);
-    background-size: 150%; 
-    display: flex;
-    align-items: flex-end;
-    padding: 0 0 20px 0;
-    margin: 5em;
-    border-radius: 30px;
-/* } */
-
+/* Work card flex properties */
  .flex-item {
     border: 5px solid var(--secondary);
     color: var(--tertiary);
@@ -178,24 +165,19 @@ h2 {
     transition: all 0.5s;
     font-size: 0.9rem;
 } 
-
+/* Card background images */
 .pier-overview {
     background-image: url(./images/Mavic\ 3\ pier\ 1.jpeg);
-
 }
-
 .drone-with-pier {
     background-image: url(./images/drone\ with\ pier.jpg);
 }
-
 .tahoe {
     background-image: url(./images/tahoe.JPG);
 }
-
 .catalina {
     background-image: url(./images/Catalina.JPG);
 }
-
 .river-ad {
     background-image: url(./images/River\ ad.JPG);
 }
