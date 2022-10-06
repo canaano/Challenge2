@@ -4,7 +4,7 @@
 
 ## Screenshot
 
-1[Challenge2 Screenshot](./assets/images/Canaan%20Owens%20Portfolio-1.png)
+![Challenge2 Screenshot](./assets/images/Canaan%20Owens%20Portfolio-1.png)
 
 ## Your Task
 
